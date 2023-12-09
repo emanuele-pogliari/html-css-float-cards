@@ -5,8 +5,8 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* test struttura pagina */
-    border: 1px solid red;
+    /* test struttura pagina
+    border: 1px solid red; */
 }
 
 /* creazione proprietà clearfix */
