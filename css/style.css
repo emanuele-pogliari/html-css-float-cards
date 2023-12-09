@@ -83,6 +83,19 @@ img {
     height: 100px;
 }
 
+.info-card {
+    width: calc(100% - 100px);
+    height: 100px;
+
+    padding: 12px 15px;
+
+    float: left;
+}
+
+.info-card div {
+    padding-bottom: 4px;
+}
+
 .info-card *:first-child {
     font-weight: 900;
     font-size: 1.1em;
