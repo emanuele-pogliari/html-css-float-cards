@@ -39,6 +39,11 @@ h1 {
     color: #E53170;
 }
 
+a[href*="mailto"] {
+    color: #6ECBE3;
+    text-decoration: none;
+}
+
 /* Inzio modifiche contenuto principale */
 
 main {
@@ -54,4 +59,31 @@ main {
     padding: 25px 0;
 
     text-align: center;
+}
+
+/* fine modifiche */
+
+
+
+/* Inizio modifiche sezione 2*/
+
+/* stile singola card */
+
+.card {
+    float: left;
+    color: white;
+    background-color: #0F0E17;
+    width: calc(100% / 3 - 30px);
+    margin: 25px 15px;
+}
+
+img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.info-card *:first-child {
+    font-weight: 900;
+    font-size: 1.1em;
 }
