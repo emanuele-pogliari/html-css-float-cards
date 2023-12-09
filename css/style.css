@@ -67,22 +67,35 @@ main {
 
 /* Inizio modifiche sezione 2*/
 
-/* stile singola card */
+/* STILE SINGOLA CARD 
+   con "width: calc(100% / 3 - 30px)" calcolo la larghezza che dovranno avere le singole card alla quale sottraggo 30 pixel per poter inserire
+   il margine necessario a creare divisione tra di loro.
+*/
 
 .card {
     float: left;
+
+    width: calc(100% / 3 - 30px);
+
+    margin: 25px 15px;
+
     color: white;
     background-color: #0F0E17;
-    width: calc(100% / 3 - 30px);
-    margin: 25px 15px;
     box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.5);
 }
 
 img {
     float: left;
+
     width: 100px;
     height: 100px;
 }
+
+/*  INIZIO STILIZZAZIONE INFO-CARD
+    aggiunto "width: calc(100% - 100px)" per far in modo che i div con classe info-card non occupassero tutta lo spazio del loro genitore,
+    calcolando la lunghezza totale della card sia tutto il div genitore alla quale sottraggo 100 pixel che corrispondono alla dimensione 
+    dell'imagine adiacente ai div.
+*/
 
 .info-card {
     width: calc(100% - 100px);
@@ -93,9 +106,13 @@ img {
     float: left;
 }
 
+/* aggiunta spaziatura fra i blocchi di testo di ogni singola card */
+
 .info-card div {
     padding-bottom: 4px;
 }
+
+/* modifiche di stile ai div di ogni singola card contenenti i nomi */
 
 .info-card *:first-child {
     font-weight: 900;
